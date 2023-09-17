@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node": "^20.6.0"
+  },
+  "name": "50days",
+  "version": "1.0.0",
+  "description": "50 proyects in 50 Days",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastina Luna",
+  "license": "ISC"
+}
