@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    background-color: #606164;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    overflow-x: hidden;
+}
+
+main{
+    width: 100vw;
+    height: 200vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 5em 6em;
+    position: absolute;
+    transform-origin: top left;
+    transform: rotate(0deg);
+}
+
+.menu{
+    background-color: orange;
+    position: absolute;
+    height: 14em;
+    width: 14em;
+    top: -7em;
+    left: -7em;
+    z-index: 100;
+    border-radius: 7em;
+    transform-origin: 7em 7em;
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+.menu__line{
+    width: 1.5em;
+    height: 0.2em;
+    background-color: rgb(0, 0, 0);
+}
+
+.menu--burger{
+    position: absolute;
+    left: 9em;
+    top: 9.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.menu--equis{
+    position: absolute;
+    left: 1.5em;
+    top: 9.8em;
+    gap: 0.5em;
+}
+
+.line--equis:nth-child(1){
+    transform-origin: center center center;
+    transform: rotate(45deg);
+    width: 1.5em;
+    position: absolute;
+    left: 1.8em;
+}
+
+.line--equis:nth-child(2){
+    transform-origin: center center center;
+    transform: rotate(-45deg);
+    width: 1.5em;
+    position: absolute;
+    left: 1.8em;
+}
+
+.links{
+    position: absolute;
+    left: -9em;
+    bottom: 5em;
+}
+
+li{
+    list-style: none;
+}
+
+.link{
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.list:nth-child(1){
+    padding: 1em 2em;
+}
+
+.list:nth-child(2){
+    padding: 1em 4em;
+}
+
+.list:nth-child(3){
+    padding: 1em 6em;
+}
