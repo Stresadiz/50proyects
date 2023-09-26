@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    background-image: url("../img/paisajes\ naturales\ nuevas\ fotos\ lagos\ montañas\ flores\ y\ bosques\ \(5\).jpg");
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 100;
+    animation: variationBlur 5s;
+}
+
+@keyframes variationBlur {
+    0%{
+        filter: blur(10px);
+    }
+
+    50%{
+        filter: blur(7px);
+    }
+    100%{
+        filter: blur(0px);
+    }
+}
+
+@keyframes setOpacity {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.porcent{
+    z-index: 1;
+    filter: blur(0px);
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    animation: setOpacity 9s;
+}
+
+h1{
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+}
